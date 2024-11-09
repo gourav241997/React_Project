@@ -1,0 +1,194 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid #222;
+}
+
+.navbar-ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding:0 ;
+}
+
+.navbar-ul .navlink {
+  display: inline;
+  cursor: pointer;
+  padding:0 ;
+  list-style: none;
+  text-decoration: none;
+  color:#222;
+  font-weight: 500;
+}
+
+.navbar-ul .selected {
+ color:#228ed6;
+ font-weight: 400;
+ text-decoration: underline;
+ text-underline-offset: 19px;
+}
+.search {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search input {
+  padding: 7px 15px;
+  border:1px solid #ccc;
+  border-right:none;
+
+  border-radius: 3px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+outline: none;
+ 
+}
+.search input:focus {
+  border-color: rgb(0, 179, 255); /* Change border color to blue */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Add a subtle box shadow for emphasis */
+}
+.search button {
+  background-color: rgb(78, 78, 209);
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  
+  
+}
+
+.movies-heading{
+  padding:5px;
+}
+
+.cardcontainer {
+  max-width:1500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding:12px;
+  margin-left:4.5rem;
+  justify-content: flex-start;
+}
+
+.card {
+  max-width: 300px;
+  height: auto;
+  padding: 0;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;  /* Add a smooth transition effect */
+
+  /* Additional styling */
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 1px 0 10px 10px rgba(128, 128, 128, 0.3); /* Grey box shadow on hover on all sides */
+}
+
+.card:hover {
+  transform: translateY(5px); /* Move the card down by 5px when clicked */
+}
+.card img {
+  width: 100%; 
+  max-width: 350px; 
+  height: 240px; 
+  cursor: pointer;
+}
+
+
+.card h4{
+  padding-left: 25px;
+}
+
+.card p{
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* Moviedetail */
+
+.details{
+  margin-top: 2rem;
+}
+.details .bth{
+  padding:1rem;
+  color:rgb(21, 193, 236);
+  text-decoration: none;
+}
+
+.detailcard{
+  display:flex;
+  align-items: center;
+  padding:10px;
+ 
+
+}
+.detailcard img{
+  max-width: 300px;
+  width:100%;
+  height:auto;
+  cursor: pointer;
+}
+.detailcard img{
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+.detailcard img:active,.detailcard img:focus{
+  transform: scale(1.3); /* You can adjust the scale factor as needed */
+  cursor: pointer; 
+}
+
+.detailcard h2{
+  padding-left:25px;
+}
+.detailcard ul{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.detailcard ul .lidetail{
+  display: flex;
+ flex-direction: row;
+ justify-content:flex-start;
+ align-items: center;
+ gap:5rem;
+ text-align: justify;
+
+}
+
+.detailcard ul .lidetail .list-content-heading{
+  width:60px;
+  color:black;
+}
+
+.detailcard ul .lidetail .list-content-detail{
+text-align-last: left;
+align-self: baseline;
+}
+
+.datanotfound{
+  width:100vw;
+  height:80vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:500 ;
+}
